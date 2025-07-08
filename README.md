@@ -29,18 +29,18 @@ Este script bash automatiza la instalación de AWX Operator en clusters de Kuber
 
 ```bash
 # Clonar repositorio (si está en GitHub)
-git clone <repository-url>
-cd awx-operator-installer
+git clone https://github.com/lucasandlucas999/awx-installer.git
+cd awx
 
 # O descargar directamente
-wget <script-url>/install-awx.sh
-chmod +x install-awx.sh
+wget https://github.com/lucasandlucas999/awx-installer.git/awx-installer.sh
+chmod +x awx-installer.sh
 ```
 
 ### Ejecución
 
 ```bash
-./install-awx.sh
+./awx-installer.sh
 ```
 
 ## 📖 Uso
@@ -50,7 +50,7 @@ chmod +x install-awx.sh
 Ejecuta el script y selecciona la opción `1`:
 
 ```bash
-./install-awx.sh
+./awx-installer.sh
 ```
 
 - **Cluster name**: Nombre del cluster Kind (por defecto: `awx-cluster`)
@@ -61,7 +61,7 @@ Ejecuta el script y selecciona la opción `1`:
 Para añadir más instancias de AWX, ejecuta el script y selecciona la opción `2`:
 
 ```bash
-./install-awx.sh
+./awx-installer.sh
 ```
 
 Proporciona:
